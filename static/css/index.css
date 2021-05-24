@@ -88,12 +88,14 @@ body {
 
  
 .icon {
-    padding: 5px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
 }
 
 .icon:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
 }
 
 #enso-mobile {
