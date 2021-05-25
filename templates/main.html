@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block main %}
-    <div class="d-flex d-sm-none" id="external-links-mobile">
-        <a class="icon" href="https://github.com/ZenenTreadwell"><img src={{ url_for('static', filename='images/github.png') }} alt="Github"></a>
-        <a href="https://armada-alliance.com/"><img class="icon" src={{ url_for('static', filename='images/armada.png') }} alt="Armada"></a>
-        <a href="https://cardano.org/"><img class="icon" src={{ url_for('static', filename='images/cardano.png') }} alt="Cardano"></a>
-    </div>
-    <div class="d-none d-sm-flex" id="external-links">
-        <a href="https://github.com/ZenenTreadwell"><img class="icon" src={{ url_for('static', filename='images/github.png') }} alt="Github"></a>
-        <a href="https://armada-alliance.com/"><img class="icon" src={{ url_for('static', filename='images/armada.png') }} alt="Armada"></a>
-        <a href="https://cardano.org/"><img class="icon" src={{ url_for('static', filename='images/cardano.png') }} alt="Cardano"></a>
-    </div>
+<div class="d-flex d-sm-none" id="external-links-mobile">
+    <a class="icon" href="https://github.com/ZenenTreadwell"><img src={{ url_for('static', filename='images/github.png') }} alt="Github"></a>
+    <a href="https://armada-alliance.com/"><img class="icon" src={{ url_for('static', filename='images/armada.png') }} alt="Armada"></a>
+    <a href="https://cardano.org/"><img class="icon" src={{ url_for('static', filename='images/cardano.png') }} alt="Cardano"></a>
+</div>
+<div class="d-none d-sm-flex" id="external-links">
+    <a href="https://github.com/ZenenTreadwell"><img class="icon" src={{ url_for('static', filename='images/github.png') }} alt="Github"></a>
+    <a href="https://armada-alliance.com/"><img class="icon" src={{ url_for('static', filename='images/armada.png') }} alt="Armada"></a>
+    <a href="https://cardano.org/"><img class="icon" src={{ url_for('static', filename='images/cardano.png') }} alt="Cardano"></a>
+</div>
 <div class="container-fluid gx-0 px-0" id="page-one">
     <div class="row center d-none d-sm-flex">
         <div class="container col-7">
@@ -47,21 +47,25 @@
         <h2>Let's start at the beginning. What is cryptocurrency?</h2>
         <p>Well, 'cryptocurrency' is a common way of using a relatively new technology called blockchain. Blockchain, in its most abstract form, can be imagined as a <i>ledger that exists within the sky.</i></p>
         <p>Though someone created this ledger, nobody owns it. Instead, it is free for anyone to read and copy however they want to. Writing a page in the ledger (minting a block), however, is a great honor and
-        therefore the duty is passed around by all members of the community. As someone is writing in the ledger, they can erase and rewrite lines as needed in order to stay up to date. However, once a page has
+        therefore the duty is passed around between the members of the community. As someone is writing in the ledger, they can erase and rewrite lines as needed in order to stay up to date. However, once a page has
         been finished and the turned over, it can never be changed or modified. It will be on that ledger forever.</p>
         <p>Because of their permanence, these pages are incredibly useful for keeping track of transactions. If I send you 100 ADA, that will be recorded in a section of the Cardano blockchain. Anyone who
         has a copy of the blockchain will be able to see the details of that exchange. There is no disputability and no way for a governing body to modify that information, because the ink is dry.</p>
-        <h2>Okay, I see how it could be useful, but how does it have any REAL value?</h2>
+        <h2>I see how it could be useful, but how does it have any actual value?</h2>
         <p>The first generation of cryptocurrency (Bitcoin and similar coins) was created to have its value driven by the work required to mint a block. Since Bitcoin requires the computer to solve a math problem in order to create the block, its value is based on how much effort is required to solve that problem. This allows people to trade Bitcoin for fiat currency and then transfer that value to others through the network.
         </p>
         <p>Subsequent cryptocurrencies such as Ethereum and Cardano have built their value based on the services that they provide for their users. Instead of putting the work towards solving difficult math problems, members of the community use their computers to run programs on top of the network.
         </p>
         <h2>There are hundreds of cryptocurrencies out there, so why choose Cardano?</h2>
-        <p>Choosing to invest in a cryptocurrency is much like choosing to invest in a stock. In order to do so properly, you should do your own research. Personally, I choose to invest and participate in the Cardano ecosystem because I believe in the vision that the project is aiming towards - a decentralised economy which is controlled by its participants instead of by governmental or legislative bodies. Open source technology allows a freedom and transparency that could never be offered through the bureaucracy of governments and corporate entities. Cardano offers a means of voting through the act of delegation. Delegating to a stakepool does not require any release of personal control over your ADA and can be revoked at any time. The chance of a stakepool minting a block is proportional to the amount of currency delegated to that stakepool, up to a certain point. When it succeeds, the stakepool shares the profits with everyone who delegates in proportion to how much each person puts forward.
+        <p>One of the most important features of the Cardano protocol is its implementation of Proof-of-Stake consensus, where the opportunity to mint a block is offered relative to the user's stake within the system, instead of according to that user's ability complicated math problems quickly. This is significant because it uses a small fraction of the energy (less than 0.0001%) used by cryptocurrencies such as Bitcoin or Ethereum. That said, Choosing to invest in a cryptocurrency is much like choosing to invest in a stock. In order to do so properly, you should do your own research. 
+        </p>
+        <p>Personally, I choose to invest and participate in the Cardano ecosystem because I believe in the vision that the project is aiming towards - a decentralised economy which is controlled by its participants instead of by governmental or legislative bodies. Open source technology allows a freedom and transparency that could never be offered through the bureaucracy of governments and corporate entities. Cardano offers a means of voting through the act of delegation. Delegating to a stakepool does not require any release of personal control over your ADA and can be revoked at any time. The chance of a stakepool minting a block is proportional to the amount of currency delegated to that stakepool, up to a certain point. When it succeeds, the stakepool shares the profits with everyone who delegates in proportion to how much each person puts forward.
         </p>
         <h2>Neat! Well, why would I delegate to ZAZEN?</h2>
-        <p>This, too, is a matter of personal preference. First off, I believe in true decentralisation and putting the power of the internet back into the hands of the users. My stakepool is hosted in my own home, on two small computers called Raspberry Pi. These computers take about the same amount of energy as a phone does as it charges. As such, I can afford to offer near-maximum rewards for anyone staking on ZAZEN. Furthermore, delegation encourages me to put more effort towards my personal projects. My blog is currently a work-in-progress but I am hoping that, once operational, some of the content will be compelling enough for you to support me. I couldn't ask for anything more. </p>
-        <p>Peace and love, Zenen 
+        <p>This, too, is a matter of personal preference. First off, I believe in true decentralisation and putting the power of the internet back into the hands of the users. My stakepool is hosted in my own home, on two small computers called Raspberry Pi. These computers take about the same amount of energy that a phone does as it charges. As such, I can afford to offer near-maximum rewards for anyone staking on ZAZEN. Furthermore, delegation encourages me to put more effort towards my personal projects. My blog is currently a work-in-progress but I am hoping that, once operational, some of the content will be compelling enough for you to support me. If you want to delegate to ZAZEN, more information can be found <a href="https://www.adastrong.com/staking/"> here</a>. I couldn't ask for anything more. 
+        </p>
+        <p>
+        Peace and love, Zenen
         </p> 
     </div>
 </div>
